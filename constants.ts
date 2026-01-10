@@ -1,0 +1,208 @@
+import { Content, Language } from './types';
+
+export const TRANSLATIONS: Record<Language, Content> = {
+  en: {
+    nav: {
+      home: "Home",
+      services: "Services",
+      about: "About Us",
+      contact: "Contact",
+    },
+    hero: {
+      title: "Advanced Technical Infrastructure for Your Business",
+      subtitle: "Professional network rack assembly, fiber optic splicing, and top-tier security systems across Israel.",
+      cta: "Get a Quote",
+    },
+    services: {
+      title: "Our Services",
+      subtitle: "Comprehensive solutions for modern connectivity and safety.",
+      learnMore: "Get Quote",
+      items: [
+        {
+          id: 'racks',
+          title: "Network Rack Assembly",
+          description: "Professional assembly and organization of server cabinets and network racks for optimal airflow and management.",
+          iconName: 'Server',
+        },
+        {
+          id: 'fiber',
+          title: "Fiber Optic Splicing",
+          description: "Precision fusion splicing and testing for high-speed fiber optic networks with minimal signal loss.",
+          iconName: 'Zap',
+        },
+        {
+          id: 'cabling',
+          title: "Cable Infrastructure",
+          description: "Structured cabling installation (Cat6, Cat7) ensuring neat, labeled, and reliable connectivity.",
+          iconName: 'Cable',
+        },
+        {
+          id: 'security',
+          title: "Security Systems",
+          description: "Installation of CCTV, access control, and alarm systems to protect your assets 24/7.",
+          iconName: 'ShieldCheck',
+        },
+      ],
+    },
+    about: {
+      title: "About onTech",
+      description: "Based in Israel, onTech specializes in building the physical backbone of the digital world. With a team of certified technicians, we deliver precise, aesthetic, and reliable infrastructure solutions for offices, industrial zones, and data centers. We speak your language—literally and technically.",
+      stat1: "100%",
+      stat1Label: "Reliability",
+      stat2: "500+",
+      stat2Label: "Projects Done",
+      stat3: "24/7",
+      stat3Label: "Support",
+    },
+    contact: {
+      title: "Contact Us",
+      subtitle: "Ready to upgrade your infrastructure? Let's talk.",
+      namePlaceholder: "Your Name",
+      emailPlaceholder: "Your Email",
+      phonePlaceholder: "Phone Number",
+      messagePlaceholder: "How can we help you?",
+      submitButton: "Send Message",
+      successMessage: "Thank you! We will be in touch shortly.",
+    },
+    footer: {
+      rights: "All rights reserved.",
+      location: "Israel",
+    },
+  },
+  ru: {
+    nav: {
+      home: "Главная",
+      services: "Услуги",
+      about: "О нас",
+      contact: "Контакты",
+    },
+    hero: {
+      title: "Профессиональная Техническая Инфраструктура",
+      subtitle: "Сборка сетевых шкафов, сварка оптоволокна и установка систем безопасности по всему Израилю.",
+      cta: "Получить предложение",
+    },
+    services: {
+      title: "Наши Услуги",
+      subtitle: "Комплексные решения для современной связи и безопасности.",
+      learnMore: "Заказать",
+      items: [
+        {
+          id: 'racks',
+          title: "Сборка сетевых шкафов",
+          description: "Профессиональный монтаж и организация серверных стоек для оптимального охлаждения и управления.",
+          iconName: 'Server',
+        },
+        {
+          id: 'fiber',
+          title: "Сварка оптоволокна",
+          description: "Точная сварка и тестирование оптоволоконных сетей для обеспечения высокой скорости без потерь.",
+          iconName: 'Zap',
+        },
+        {
+          id: 'cabling',
+          title: "Прокладка кабеля",
+          description: "Монтаж структурированных кабельных систем (Cat6, Cat7), маркировка и аккуратная укладка.",
+          iconName: 'Cable',
+        },
+        {
+          id: 'security',
+          title: "Системы безопасности",
+          description: "Установка видеонаблюдения, систем контроля доступа и сигнализации для защиты вашего бизнеса.",
+          iconName: 'ShieldCheck',
+        },
+      ],
+    },
+    about: {
+      title: "О компании onTech",
+      description: "onTech — ведущая компания в Израиле, специализирующаяся на создании физической основы цифрового мира. Наша команда сертифицированных техников обеспечивает точные, эстетичные и надежные инфраструктурные решения для офисов, промышленных зон и дата-центров.",
+      stat1: "100%",
+      stat1Label: "Надежность",
+      stat2: "500+",
+      stat2Label: "Проектов",
+      stat3: "24/7",
+      stat3Label: "Поддержка",
+    },
+    contact: {
+      title: "Свяжитесь с нами",
+      subtitle: "Готовы обновить инфраструктуру? Напишите нам.",
+      namePlaceholder: "Ваше имя",
+      emailPlaceholder: "Ваш Email",
+      phonePlaceholder: "Номер телефона",
+      messagePlaceholder: "Чем мы можем помочь?",
+      submitButton: "Отправить",
+      successMessage: "Спасибо! Мы свяжемся с вами в ближайшее время.",
+    },
+    footer: {
+      rights: "Все права защищены.",
+      location: "Израиль",
+    },
+  },
+  he: {
+    nav: {
+      home: "בית",
+      services: "שירותים",
+      about: "אודות",
+      contact: "צור קשר",
+    },
+    hero: {
+      title: "תשתיות תקשורת מתקדמות לעסק שלך",
+      subtitle: "הרכבת ארונות תקשורת, ריתוך סיבים אופטיים ומערכות אבטחה ברמה הגבוהה ביותר בפריסה ארצית.",
+      cta: "קבל הצעת מחיר",
+    },
+    services: {
+      title: "השירותים שלנו",
+      subtitle: "פתרונות מקיפים לתקשורת ובטיחות מודרנית.",
+      learnMore: "הזמן עכשיו",
+      items: [
+        {
+          id: 'racks',
+          title: "הרכבת ארונות תקשורת",
+          description: "הרכבה וסידור מקצועי של ארונות שרתים ותקשורת לזרימת אוויר אופטימלית וניהול נוח.",
+          iconName: 'Server',
+        },
+        {
+          id: 'fiber',
+          title: "ריתוך סיבים אופטיים",
+          description: "ריתוך מדויק ובדיקת רשתות סיבים אופטיים למהירות גבוהה במינימום איבוד אות.",
+          iconName: 'Zap',
+        },
+        {
+          id: 'cabling',
+          title: "תשתיות כבילה",
+          description: "התקנת כבילה מובנית (Cat6, Cat7) המבטיחה קישוריות אמינה, מסודרת ומסומנת.",
+          iconName: 'Cable',
+        },
+        {
+          id: 'security',
+          title: "מערכות אבטחה",
+          description: "התקנת מצלמות אבטחה (CCTV), בקרת כניסה ומערכות אזעקה להגנה על העסק שלך 24/7.",
+          iconName: 'ShieldCheck',
+        },
+      ],
+    },
+    about: {
+      title: "אודות onTech",
+      description: "חברת onTech ממוקמת בישראל ומתמחה בבניית השלד הפיזי של העולם הדיגיטלי. עם צוות טכנאים מוסמכים, אנו מספקים פתרונות תשתית מדויקים, אסתטיים ואמינים למשרדים, אזורי תעשייה ומרכזי נתונים. אנו מדברים בשפה שלך - טכנית ועסקית.",
+      stat1: "100%",
+      stat1Label: "אמינות",
+      stat2: "500+",
+      stat2Label: "פרויקטים",
+      stat3: "24/7",
+      stat3Label: "תמיכה",
+    },
+    contact: {
+      title: "צור קשר",
+      subtitle: "מוכנים לשדרג את התשתית? בואו נדבר.",
+      namePlaceholder: "שם מלא",
+      emailPlaceholder: "אימייל",
+      phonePlaceholder: "מספר טלפון",
+      messagePlaceholder: "כיצד נוכל לעזור?",
+      submitButton: "שלח הודעה",
+      successMessage: "תודה! ניצור קשר בהקדם.",
+    },
+    footer: {
+      rights: "כל הזכויות שמורות.",
+      location: "ישראל",
+    },
+  },
+};
