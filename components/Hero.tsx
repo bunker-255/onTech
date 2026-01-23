@@ -1,11 +1,12 @@
 import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
-import { ArrowRight, ArrowLeft, ChevronDown } from 'lucide-react';
+import { ArrowRight, ArrowLeft, ChevronDown, MessageCircle } from 'lucide-react';
 import { scrollToSection } from '../utils/scroll';
 
 const Hero: React.FC = () => {
   const { content, dir } = useLanguage();
   const ArrowIcon = dir === 'rtl' ? ArrowLeft : ArrowRight;
+  const whatsappNumber = "972526085951";
 
   return (
     <div id="home" className="relative min-h-screen flex items-center justify-center bg-tech-dark overflow-hidden">
@@ -40,11 +41,13 @@ const Hero: React.FC = () => {
           
           <div className="mt-12 flex flex-col sm:flex-row justify-center gap-6 animate-fade-up delay-200">
             <a
-              href="#contact"
-              onClick={(e) => scrollToSection(e, '#contact')}
-              className="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-brand-600 rounded-lg hover:bg-brand-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-600 focus:ring-offset-slate-900 overflow-hidden"
+              href={`https://wa.me/${whatsappNumber}?text=Hi,%20I'm%20interested%20in%20onTech%20services.`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-[#25D366] rounded-lg hover:bg-[#20bd5a] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 focus:ring-offset-slate-900 overflow-hidden"
             >
               <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></div>
+              <MessageCircle className="mr-2 w-5 h-5" />
               <span>{content.hero.cta}</span>
               <ArrowIcon className="ml-3 rtl:mr-3 rtl:ml-0 w-5 h-5 group-hover:translate-x-1 rtl:group-hover:-translate-x-1 transition-transform" />
             </a>

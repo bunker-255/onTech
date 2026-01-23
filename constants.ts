@@ -19,16 +19,10 @@ export const TRANSLATIONS: Record<Language, Content> = {
       learnMore: "Get Quote",
       items: [
         {
-          id: 'racks',
-          title: "Network Rack Assembly",
-          description: "Professional assembly and organization of server cabinets and network racks for optimal airflow and management.",
-          iconName: 'Server',
-        },
-        {
-          id: 'fiber',
-          title: "Fiber Optic Splicing",
-          description: "Precision fusion splicing and testing for high-speed fiber optic networks with minimal signal loss.",
-          iconName: 'Zap',
+          id: 'security',
+          title: "Security Systems",
+          description: "Installation of CCTV, access control, and alarm systems to protect your assets 24/7.",
+          iconName: 'ShieldCheck',
         },
         {
           id: 'cabling',
@@ -37,10 +31,16 @@ export const TRANSLATIONS: Record<Language, Content> = {
           iconName: 'Cable',
         },
         {
-          id: 'security',
-          title: "Security Systems",
-          description: "Installation of CCTV, access control, and alarm systems to protect your assets 24/7.",
-          iconName: 'ShieldCheck',
+          id: 'fiber',
+          title: "Fiber Optic Splicing",
+          description: "Precision fusion splicing and testing for high-speed fiber optic networks with minimal signal loss.",
+          iconName: 'Zap',
+        },
+        {
+          id: 'racks',
+          title: "Network Rack Assembly",
+          description: "Professional assembly and organization of server cabinets and network racks for optimal airflow and management.",
+          iconName: 'Server',
         },
       ],
     },
@@ -63,6 +63,7 @@ export const TRANSLATIONS: Record<Language, Content> = {
       messagePlaceholder: "How can we help you?",
       submitButton: "Send Message",
       successMessage: "Thank you! We will be in touch shortly.",
+      address: "Carlebach 10, Tel Aviv (By appointment only)",
     },
     footer: {
       rights: "All rights reserved.",
@@ -87,16 +88,10 @@ export const TRANSLATIONS: Record<Language, Content> = {
       learnMore: "Заказать",
       items: [
         {
-          id: 'racks',
-          title: "Сборка сетевых шкафов",
-          description: "Профессиональный монтаж и организация серверных стоек для оптимального охлаждения и управления.",
-          iconName: 'Server',
-        },
-        {
-          id: 'fiber',
-          title: "Сварка оптоволокна",
-          description: "Точная сварка и тестирование оптоволоконных сетей для обеспечения высокой скорости без потерь.",
-          iconName: 'Zap',
+          id: 'security',
+          title: "Системы безопасности",
+          description: "Установка видеонаблюдения, систем контроля доступа и сигнализации для защиты вашего бизнеса.",
+          iconName: 'ShieldCheck',
         },
         {
           id: 'cabling',
@@ -105,10 +100,16 @@ export const TRANSLATIONS: Record<Language, Content> = {
           iconName: 'Cable',
         },
         {
-          id: 'security',
-          title: "Системы безопасности",
-          description: "Установка видеонаблюдения, систем контроля доступа и сигнализации для защиты вашего бизнеса.",
-          iconName: 'ShieldCheck',
+          id: 'fiber',
+          title: "Сварка оптоволокна",
+          description: "Точная сварка и тестирование оптоволоконных сетей для обеспечения высокой скорости без потерь.",
+          iconName: 'Zap',
+        },
+        {
+          id: 'racks',
+          title: "Сборка сетевых шкафов",
+          description: "Профессиональный монтаж и организация серверных стоек для оптимального охлаждения и управления.",
+          iconName: 'Server',
         },
       ],
     },
@@ -131,6 +132,7 @@ export const TRANSLATIONS: Record<Language, Content> = {
       messagePlaceholder: "Чем мы можем помочь?",
       submitButton: "Отправить",
       successMessage: "Спасибо! Мы свяжемся с вами в ближайшее время.",
+      address: "Карлибах 10, Тель-Авив (только по предварительной записи)",
     },
     footer: {
       rights: "Все права защищены.",
@@ -155,16 +157,10 @@ export const TRANSLATIONS: Record<Language, Content> = {
       learnMore: "הזמן עכשיו",
       items: [
         {
-          id: 'racks',
-          title: "הרכבת ארונות תקשורת",
-          description: "הרכבה וסידור מקצועי של ארונות שרתים ותקשורת לזרימת אוויר אופטימלית וניהול נוח.",
-          iconName: 'Server',
-        },
-        {
-          id: 'fiber',
-          title: "ריתוך סיבים אופטיים",
-          description: "ריתוך מדויק ובדיקת רשתות סיבים אופטיים למהירות גבוהה במינימום איבוד אות.",
-          iconName: 'Zap',
+          id: 'security',
+          title: "מערכות אבטחה",
+          description: "התקנת מצלמות אבטחה (CCTV), בקרת כניסה ומערכות אזעקה להגנה על העסק שלך 24/7.",
+          iconName: 'ShieldCheck',
         },
         {
           id: 'cabling',
@@ -173,10 +169,16 @@ export const TRANSLATIONS: Record<Language, Content> = {
           iconName: 'Cable',
         },
         {
-          id: 'security',
-          title: "מערכות אבטחה",
-          description: "התקנת מצלמות אבטחה (CCTV), בקרת כניסה ומערכות אזעקה להגנה על העסק שלך 24/7.",
-          iconName: 'ShieldCheck',
+          id: 'fiber',
+          title: "ריתוך סיבים אופטיים",
+          description: "ריתוך מדויק ובדיקת רשתות סיבים אופטיים למהירות גבוהה במינימום איבוד אות.",
+          iconName: 'Zap',
+        },
+        {
+          id: 'racks',
+          title: "הרכבת ארונות תקשורת",
+          description: "הרכבה וסידור מקצועי של ארונות שרתים ותקשורת לזרימת אוויר אופטימלית וניהול נוח.",
+          iconName: 'Server',
         },
       ],
     },
@@ -199,6 +201,7 @@ export const TRANSLATIONS: Record<Language, Content> = {
       messagePlaceholder: "כיצד נוכל לעזור?",
       submitButton: "שלח הודעה",
       successMessage: "תודה! ניצור קשר בהקדם.",
+      address: "קרליבך 10, תל אביב (בתיאום מראש בלבד)",
     },
     footer: {
       rights: "כל הזכויות שמורות.",

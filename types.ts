@@ -44,6 +44,7 @@ export interface Content {
     messagePlaceholder: string;
     submitButton: string;
     successMessage: string;
+    address: string;
   };
   footer: {
     rights: string;

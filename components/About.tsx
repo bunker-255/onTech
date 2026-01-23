@@ -44,7 +44,7 @@ const About: React.FC = () => {
           <div className="lg:col-span-6 mt-16 lg:mt-0 relative">
             <div className="relative rounded-[2rem] overflow-hidden shadow-2xl border-8 border-white transform rotate-2 hover:rotate-0 transition-transform duration-700">
                <img
-                src="/photo/Server.jpg"
+                src="https://raw.githubusercontent.com/bunker-255/onTech/refs/heads/main/photo/IMG-20251210-WA0029.jpg"
                 alt="Structured Cabling"
                 className="w-full h-[600px] object-cover filter contrast-110"
               />
