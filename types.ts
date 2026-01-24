@@ -1,53 +1,79 @@
 export type Language = 'en' | 'ru' | 'he';
 
-export interface ServiceData {
-  id: string;
+export interface ServiceItem {
   title: string;
   description: string;
-  iconName: 'Server' | 'Zap' | 'Cable' | 'ShieldCheck';
+  features: string[];
+}
+
+export interface ProcessStep {
+  title: string;
+  description: string;
+}
+
+export interface FAQItem {
+  question: string;
+  answer: string;
 }
 
 export interface Content {
   nav: {
     home: string;
     services: string;
+    process: string;
     about: string;
     contact: string;
   };
   hero: {
     title: string;
+    highlight: string;
     subtitle: string;
     cta: string;
+    secondaryCta: string;
   };
   services: {
+    sectionTitle: string;
+    sectionSubtitle: string;
+    securityTitle: string;
+    securitySubtitle: string;
+    infraTitle: string;
+    infraSubtitle: string;
+    cctv: ServiceItem;
+    alarms: ServiceItem;
+    telephony: ServiceItem;
+    networking: ServiceItem;
+    fiber: ServiceItem;
+    racks: ServiceItem;
+  };
+  process: {
     title: string;
     subtitle: string;
-    learnMore: string;
-    items: ServiceData[];
+    steps: ProcessStep[];
   };
   about: {
     title: string;
-    description: string;
-    stat1: string;
-    stat1Label: string;
-    stat2: string;
-    stat2Label: string;
-    stat3: string;
-    stat3Label: string;
+    subtitle: string;
+    description1: string;
+    description2: string;
+  };
+  faq: {
+    title: string;
+    subtitle: string;
+    items: FAQItem[];
   };
   contact: {
     title: string;
     subtitle: string;
+    formTitle: string;
     namePlaceholder: string;
     emailPlaceholder: string;
     phonePlaceholder: string;
     messagePlaceholder: string;
     submitButton: string;
-    successMessage: string;
     address: string;
   };
   footer: {
     rights: string;
-    location: string;
+    description: string;
   };
 }

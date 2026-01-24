@@ -4,208 +4,286 @@ export const TRANSLATIONS: Record<Language, Content> = {
   en: {
     nav: {
       home: "Home",
-      services: "Services",
-      about: "About Us",
+      services: "Solutions",
+      process: "Process",
+      about: "Company",
       contact: "Contact",
     },
     hero: {
-      title: "Advanced Technical Infrastructure for Your Business",
-      subtitle: "Professional network rack assembly, fiber optic splicing, and top-tier security systems across Israel.",
-      cta: "Get a Quote",
+      title: "Secure Your Assets,",
+      highlight: "Empower Your Network",
+      subtitle: "Israel's premier specialists in low-voltage systems. From advanced CCTV and alarm integration to enterprise-grade fiber optics and server rooms.",
+      cta: "Get a Free Consultation",
+      secondaryCta: "View Services",
     },
     services: {
-      title: "Our Services",
-      subtitle: "Comprehensive solutions for modern connectivity and safety.",
-      learnMore: "Get Quote",
-      items: [
-        {
-          id: 'security',
-          title: "Security Systems",
-          description: "Installation of CCTV, access control, and alarm systems to protect your assets 24/7.",
-          iconName: 'ShieldCheck',
-        },
-        {
-          id: 'cabling',
-          title: "Cable Infrastructure",
-          description: "Structured cabling installation (Cat6, Cat7) ensuring neat, labeled, and reliable connectivity.",
-          iconName: 'Cable',
-        },
-        {
-          id: 'fiber',
-          title: "Fiber Optic Splicing",
-          description: "Precision fusion splicing and testing for high-speed fiber optic networks with minimal signal loss.",
-          iconName: 'Zap',
-        },
-        {
-          id: 'racks',
-          title: "Network Rack Assembly",
-          description: "Professional assembly and organization of server cabinets and network racks for optimal airflow and management.",
-          iconName: 'Server',
-        },
-      ],
+      sectionTitle: "Our Expertise",
+      sectionSubtitle: "We provide end-to-end technical solutions, splitting our focus between uncompromising security and robust network infrastructure.",
+      securityTitle: "Security & Communication",
+      securitySubtitle: "Protecting what matters most.",
+      infraTitle: "Network Infrastructure",
+      infraSubtitle: "The backbone of your operations.",
+      cctv: {
+        title: "CCTV & Surveillance",
+        description: "State-of-the-art video monitoring systems designed to eliminate blind spots. We install IP cameras, NVRs, and remote viewing setups.",
+        features: ["4K Night Vision Cameras", "Remote Mobile Access", "License Plate Recognition", "Cloud Storage Integration"]
+      },
+      alarms: {
+        title: "Alarms & Access Control",
+        description: "Comprehensive perimeter protection. We integrate smart alarm systems with biometric access control to regulate entry.",
+        features: ["Motion Detection Sensors", "Biometric/Card Access", "Intercom Integration", "24/7 Alert Systems"]
+      },
+      telephony: {
+        title: "Telephony & Intercoms",
+        description: "Crystal clear communication solutions for offices and residential buildings. IP-PBX systems and smart video intercoms.",
+        features: ["VoIP/Cloud Telephony", "Video Intercoms", "Multi-room Systems", "Conference Room Audio"]
+      },
+      networking: {
+        title: "Structured Cabling",
+        description: "The nervous system of your IT. We plan and install Cat6/Cat7 cabling ensuring speed, organization, and scalability.",
+        features: ["Cat6/Cat7 Installation", "Cable Management", "Fluke Testing", "Office Points Termination"]
+      },
+      fiber: {
+        title: "Fiber Optics",
+        description: "High-speed data transmission over long distances. Precision fusion splicing and OTDR testing for zero signal loss.",
+        features: ["Fusion Splicing", "OTDR Testing", "Backbone Cabling", "Fiber Repair Services"]
+      },
+      racks: {
+        title: "Server Room Assembly",
+        description: "Professional assembly of communication cabinets (Racks). We focus on airflow, labeling, and aesthetic organization.",
+        features: ["Rack Design & Assembly", "Cooling Optimization", "Patch Panel Termination", "Legacy Cleanup"]
+      }
+    },
+    process: {
+      title: "How We Work",
+      subtitle: "A structured approach to ensure excellence.",
+      steps: [
+        { title: "Site Survey", description: "We visit your location to assess needs, measure cable runs, and identify security vulnerabilities." },
+        { title: "Custom Design", description: "We engineer a solution tailored to your layout and budget, selecting the right hardware." },
+        { title: "Installation", description: "Our certified technicians execute the work with minimal disruption and maximum cleanliness." },
+        { title: "Support", description: "We don't just leave. We provide training on systems and offer ongoing maintenance packages." }
+      ]
     },
     about: {
       title: "About onTech",
-      description: "Based in Israel, onTech specializes in building the physical backbone of the digital world. With a team of certified technicians, we deliver precise, aesthetic, and reliable infrastructure solutions for offices, industrial zones, and data centers. We speak your language—literally and technically.",
-      stat1: "100%",
-      stat1Label: "Reliability",
-      stat2: "500+",
-      stat2Label: "Projects Done",
-      stat3: "24/7",
-      stat3Label: "Support",
+      subtitle: "Precision Engineering Since 2018",
+      description1: "onTech is a leading infrastructure firm based in Tel Aviv, serving clients nationwide. We noticed a gap in the market: technical contractors were often messy, unreliable, or lacked knowledge of modern standards. onTech was built to change that.",
+      description2: "We combine the grit of construction with the precision of IT. Whether it's a complex server room for a startup or a security system for a logistics center, we treat every cable and every camera with obsessive attention to detail.",
+    },
+    faq: {
+      title: "Frequently Asked Questions",
+      subtitle: "Common questions about our services and process.",
+      items: [
+        { question: "Do you work with private homes or only businesses?", answer: "We serve both! We install smart home security and networks for luxury residences, as well as comprehensive systems for offices and industrial facilities." },
+        { question: "What brands of cameras do you install?", answer: "We work with top-tier brands like Hikvision, Dahua, Uniview, and Axis, ensuring reliability and long-term warranty support." },
+        { question: "Do you provide warranties?", answer: "Yes, all our installations come with a standard workmanship warranty, alongside the manufacturer's warranty for the hardware." },
+        { question: "Can you fix an existing messy server rack?", answer: "Absolutely. Rack reorganization is one of our specialties. We can trace, label, and tidy up 'spaghetti' cables to improve airflow and manageability." }
+      ]
     },
     contact: {
-      title: "Contact Us",
-      subtitle: "Ready to upgrade your infrastructure? Let's talk.",
-      namePlaceholder: "Your Name",
-      emailPlaceholder: "Your Email",
+      title: "Start Your Project",
+      subtitle: "Ready to upgrade your security or speed up your network?",
+      formTitle: "Get a Quote",
+      namePlaceholder: "Full Name",
+      emailPlaceholder: "Email Address",
       phonePlaceholder: "Phone Number",
-      messagePlaceholder: "How can we help you?",
-      submitButton: "Send Message",
-      successMessage: "Thank you! We will be in touch shortly.",
-      address: "Carlebach 10, Tel Aviv (By appointment only)",
+      messagePlaceholder: "Tell us about your project...",
+      submitButton: "Send Request",
+      address: "Carlebach 10, Tel Aviv (By appointment)",
     },
     footer: {
       rights: "All rights reserved.",
-      location: "Israel",
+      description: "Advanced infrastructure solutions for the modern world.",
     },
   },
   ru: {
     nav: {
       home: "Главная",
-      services: "Услуги",
+      services: "Решения",
+      process: "Процесс",
       about: "О нас",
       contact: "Контакты",
     },
     hero: {
-      title: "Профессиональная Техническая Инфраструктура",
-      subtitle: "Сборка сетевых шкафов, сварка оптоволокна и установка систем безопасности по всему Израилю.",
-      cta: "Получить предложение",
+      title: "Защита активов,",
+      highlight: "Мощность сети",
+      subtitle: "Ведущие специалисты Израиля по слаботочным системам. От установки камер и сигнализаций до оптоволокна и серверных комнат.",
+      cta: "Бесплатная консультация",
+      secondaryCta: "Наши услуги",
     },
     services: {
-      title: "Наши Услуги",
-      subtitle: "Комплексные решения для современной связи и безопасности.",
-      learnMore: "Заказать",
-      items: [
-        {
-          id: 'security',
-          title: "Системы безопасности",
-          description: "Установка видеонаблюдения, систем контроля доступа и сигнализации для защиты вашего бизнеса.",
-          iconName: 'ShieldCheck',
-        },
-        {
-          id: 'cabling',
-          title: "Прокладка кабеля",
-          description: "Монтаж структурированных кабельных систем (Cat6, Cat7), маркировка и аккуратная укладка.",
-          iconName: 'Cable',
-        },
-        {
-          id: 'fiber',
-          title: "Сварка оптоволокна",
-          description: "Точная сварка и тестирование оптоволоконных сетей для обеспечения высокой скорости без потерь.",
-          iconName: 'Zap',
-        },
-        {
-          id: 'racks',
-          title: "Сборка сетевых шкафов",
-          description: "Профессиональный монтаж и организация серверных стоек для оптимального охлаждения и управления.",
-          iconName: 'Server',
-        },
-      ],
+      sectionTitle: "Наши Услуги",
+      sectionSubtitle: "Мы предоставляем полные технические решения, уделяя особое внимание безопасности и сетевой инфраструктуре.",
+      securityTitle: "Безопасность и Связь",
+      securitySubtitle: "Защита того, что важно.",
+      infraTitle: "Сетевая Инфраструктура",
+      infraSubtitle: "Фундамент вашего бизнеса.",
+      cctv: {
+        title: "Видеонаблюдение (CCTV)",
+        description: "Современные системы видеомониторинга. Установка IP-камер, NVR и настройка удаленного доступа с телефона.",
+        features: ["4K Ночное видение", "Удаленный доступ", "Распознавание номеров", "Облачное хранение"]
+      },
+      alarms: {
+        title: "Сигнализации и Контроль доступа",
+        description: "Комплексная защита периметра. Интеграция умных сигнализаций с биометрическими системами доступа.",
+        features: ["Датчики движения", "Биометрия и карты", "Интеграция с домофоном", "Оповещения 24/7"]
+      },
+      telephony: {
+        title: "Телефония и Домофоны",
+        description: "Чистая связь для офисов и жилых зданий. IP-АТС, облачная телефония и умные видеодомофоны.",
+        features: ["VoIP/Облачная АТС", "Видеодомофоны", "Конференц-связь", "Мультирум системы"]
+      },
+      networking: {
+        title: "Структурированные кабельные сети",
+        description: "Нервная система вашего IT. Проектирование и монтаж Cat6/Cat7 для скорости и масштабируемости.",
+        features: ["Монтаж Cat6/Cat7", "Кабель-менеджмент", "Fluke тесты", "Установка розеток"]
+      },
+      fiber: {
+        title: "Оптоволокно",
+        description: "Высокоскоростная передача данных. Точная сварка оптоволокна и рефлектометрия (OTDR) без потерь сигнала.",
+        features: ["Сварка волокна", "OTDR тестирование", "Магистральные линии", "Ремонт оптики"]
+      },
+      racks: {
+        title: "Сборка серверных шкафов",
+        description: "Профессиональная сборка коммуникационных шкафов. Организация воздушных потоков, маркировка и эстетика.",
+        features: ["Сборка стоек", "Оптимизация охлаждения", "Кроссировка патч-панелей", "Упорядочивание старых шкафов"]
+      }
+    },
+    process: {
+      title: "Как мы работаем",
+      subtitle: "Структурированный подход к качеству.",
+      steps: [
+        { title: "Осмотр объекта", description: "Мы приезжаем, оцениваем потребности, замеряем трассы кабелей и выявляем уязвимости." },
+        { title: "Проектирование", description: "Разрабатываем решение под ваш бюджет и планировку, подбирая лучшее оборудование." },
+        { title: "Монтаж", description: "Наши сертифицированные техники выполняют работу чисто, быстро и аккуратно." },
+        { title: "Поддержка", description: "Мы обучаем пользоваться системами и предлагаем пакеты технического обслуживания." }
+      ]
     },
     about: {
       title: "О компании onTech",
-      description: "onTech — ведущая компания в Израиле, специализирующаяся на создании физической основы цифрового мира. Наша команда сертифицированных техников обеспечивает точные, эстетичные и надежные инфраструктурные решения для офисов, промышленных зон и дата-центров.",
-      stat1: "100%",
-      stat1Label: "Надежность",
-      stat2: "500+",
-      stat2Label: "Проектов",
-      stat3: "24/7",
-      stat3Label: "Поддержка",
+      subtitle: "Инженерная точность с 2018 года",
+      description1: "onTech — ведущая инфраструктурная компания в Тель-Авиве, работающая по всей стране. Мы заметили проблему: технические подрядчики часто работают неаккуратно. onTech создана, чтобы это изменить.",
+      description2: "Мы объединяем мощь строительства с точностью IT. Будь то сложная серверная для стартапа или система безопасности для склада — мы относимся к каждому кабелю и камере с предельным вниманием.",
+    },
+    faq: {
+      title: "Частые вопросы",
+      subtitle: "Ответы на популярные вопросы о наших услугах.",
+      items: [
+        { question: "Вы работаете с частными домами или только с бизнесом?", answer: "Со всеми! Мы устанавливаем умный дом и безопасность в частных виллах, а также сложные системы для офисов и заводов." },
+        { question: "Камеры каких брендов вы ставите?", answer: "Мы работаем с надежными брендами: Hikvision, Dahua, Uniview и Axis, гарантируя качество и долгосрочную поддержку." },
+        { question: "Есть ли гарантия?", answer: "Да, на все работы предоставляется гарантия, плюс официальная гарантия производителя на оборудование." },
+        { question: "Можете ли вы навести порядок в старом серверном шкафу?", answer: "Конечно. Реорганизация стоек — наша специализация. Мы распутаем «спагетти» из проводов, промаркируем и аккуратно уложим всё." }
+      ]
     },
     contact: {
-      title: "Свяжитесь с нами",
-      subtitle: "Готовы обновить инфраструктуру? Напишите нам.",
+      title: "Начните проект",
+      subtitle: "Готовы обновить безопасность или ускорить сеть?",
+      formTitle: "Получить предложение",
       namePlaceholder: "Ваше имя",
-      emailPlaceholder: "Ваш Email",
-      phonePlaceholder: "Номер телефона",
-      messagePlaceholder: "Чем мы можем помочь?",
-      submitButton: "Отправить",
-      successMessage: "Спасибо! Мы свяжемся с вами в ближайшее время.",
-      address: "Карлибах 10, Тель-Авив (только по предварительной записи)",
+      emailPlaceholder: "Email",
+      phonePlaceholder: "Телефон",
+      messagePlaceholder: "Расскажите о проекте...",
+      submitButton: "Отправить запрос",
+      address: "Карлибах 10, Тель-Авив (по записи)",
     },
     footer: {
       rights: "Все права защищены.",
-      location: "Израиль",
+      description: "Передовые инфраструктурные решения.",
     },
   },
   he: {
     nav: {
       home: "בית",
-      services: "שירותים",
+      services: "פתרונות",
+      process: "תהליך עבודה",
       about: "אודות",
       contact: "צור קשר",
     },
     hero: {
-      title: "תשתיות תקשורת מתקדמות לעסק שלך",
-      subtitle: "הרכבת ארונות תקשורת, ריתוך סיבים אופטיים ומערכות אבטחה ברמה הגבוהה ביותר בפריסה ארצית.",
-      cta: "קבל הצעת מחיר",
+      title: "אבטחה ללא פשרות,",
+      highlight: "תקשורת מתקדמת",
+      subtitle: "המומחים של ישראל למערכות מתח נמוך. מהתקנת מצלמות ואזעקות חכמות ועד לתשתיות סיבים וחדרי שרתים.",
+      cta: "קבל ייעוץ חינם",
+      secondaryCta: "לשירותים שלנו",
     },
     services: {
-      title: "השירותים שלנו",
-      subtitle: "פתרונות מקיפים לתקשורת ובטיחות מודרנית.",
-      learnMore: "הזמן עכשיו",
-      items: [
-        {
-          id: 'security',
-          title: "מערכות אבטחה",
-          description: "התקנת מצלמות אבטחה (CCTV), בקרת כניסה ומערכות אזעקה להגנה על העסק שלך 24/7.",
-          iconName: 'ShieldCheck',
-        },
-        {
-          id: 'cabling',
-          title: "תשתיות כבילה",
-          description: "התקנת כבילה מובנית (Cat6, Cat7) המבטיחה קישוריות אמינה, מסודרת ומסומנת.",
-          iconName: 'Cable',
-        },
-        {
-          id: 'fiber',
-          title: "ריתוך סיבים אופטיים",
-          description: "ריתוך מדויק ובדיקת רשתות סיבים אופטיים למהירות גבוהה במינימום איבוד אות.",
-          iconName: 'Zap',
-        },
-        {
-          id: 'racks',
-          title: "הרכבת ארונות תקשורת",
-          description: "הרכבה וסידור מקצועי של ארונות שרתים ותקשורת לזרימת אוויר אופטימלית וניהול נוח.",
-          iconName: 'Server',
-        },
-      ],
+      sectionTitle: "המומחיות שלנו",
+      sectionSubtitle: "אנו מספקים מעטפת טכנית מלאה, עם דגש על פתרונות אבטחה מתקדמים ותשתיות רשת יציבות.",
+      securityTitle: "אבטחה ותקשורת",
+      securitySubtitle: "להגן על מה שחשוב באמת.",
+      infraTitle: "תשתיות רשת",
+      infraSubtitle: "עמוד השדרה של העסק שלך.",
+      cctv: {
+        title: "מצלמות אבטחה (CCTV)",
+        description: "מערכות צילום במעגל סגור לכיסוי שטחים מתים. התקנת מצלמות IP, הקלטה (NVR) וצפייה מרחוק בנייד.",
+        features: ["ראיית לילה 4K", "גישה מרחוק", "זיהוי לוחיות רישוי", "גיבוי בענן"]
+      },
+      alarms: {
+        title: "אזעקות ובקרת כניסה",
+        description: "הגנה היקפית מלאה. אינטגרציה של מערכות אזעקה חכמות עם בקרות כניסה ביומטריות ואינטרקום.",
+        features: ["גלאי תנועה ונפח", "כניסה ביומטרית", "אינטגרציה לאינטרקום", "התראות 24/7"]
+      },
+      telephony: {
+        title: "טלפוניה ואינטרקום",
+        description: "תקשורת צלולה למשרדים ולמגורים. מרכזיות IP מתקדמות, טלפוניה בענן ואינטרקום וידאו חכם.",
+        features: ["מרכזיות ענן/VoIP", "אינטרקום וידאו", "מערכות לחדרי ישיבות", "מערכות כריזה"]
+      },
+      networking: {
+        title: "תשתיות תקשורת",
+        description: "מערכת העצבים של המחשוב. תכנון והתקנת כבילה בדרגות Cat6/Cat7 למהירות וסדר מופתי.",
+        features: ["התקנת נקודות רשת", "סידור כבלים", "בדיקות פלוק (Fluke)", "פריסת כבילה"]
+      },
+      fiber: {
+        title: "סיבים אופטיים",
+        description: "העברת נתונים במהירות האור. ריתוך סיבים מדויק ובדיקות OTDR למניעת איבוד אותות.",
+        features: ["ריתוך פיוז'ן", "בדיקות OTDR", "תשתיות ליבה (Backbone)", "תיקון סיבים"]
+      },
+      racks: {
+        title: "סידור ארונות תקשורת",
+        description: "הרכבה מקצועית של ארונות שרתים. דגש על זרימת אוויר, סימון ברור ואסתטיקה גבוהה.",
+        features: ["תכנון והרכבת ארונות", "אופטימיזציית קירור", "סידור פאץ' פאנל", "סידור ארונות מבולגנים"]
+      }
+    },
+    process: {
+      title: "איך אנחנו עובדים",
+      subtitle: "גישה מובנית למצוינות.",
+      steps: [
+        { title: "סקר אתר", description: "אנו מגיעים אליך להערכת צרכים, מדידת תוואי כבילה וזיהוי פרצות אבטחה." },
+        { title: "תכנון מותאם", description: "תכנון פתרון המותאם לתקציב ולמבנה, תוך בחירת הציוד האמין והמתאים ביותר." },
+        { title: "התקנה", description: "הצוות המוסמך שלנו מבצע את העבודה בניקיון, מהירות ומינימום הפרעה לשגרה." },
+        { title: "תמיכה", description: "אנחנו לא נעלמים. הדרכה מלאה על המערכות ואפשרויות לתחזוקה שוטפת." }
+      ]
     },
     about: {
       title: "אודות onTech",
-      description: "חברת onTech ממוקמת בישראל ומתמחה בבניית השלד הפיזי של העולם הדיגיטלי. עם צוות טכנאים מוסמכים, אנו מספקים פתרונות תשתית מדויקים, אסתטיים ואמינים למשרדים, אזורי תעשייה ומרכזי נתונים. אנו מדברים בשפה שלך - טכנית ועסקית.",
-      stat1: "100%",
-      stat1Label: "אמינות",
-      stat2: "500+",
-      stat2Label: "פרויקטים",
-      stat3: "24/7",
-      stat3Label: "תמיכה",
+      subtitle: "הנדסה מדויקת מאז 2018",
+      description1: "onTech היא חברת תשתיות מובילה בתל אביב, המשרתת לקוחות בפריסה ארצית. זיהינו צורך בשוק: קבלני תקשורת היו לרוב מבולגנים או חסרי ידע בתקנים מודרניים. הקמנו את onTech כדי לשנות זאת.",
+      description2: "אנו משלבים את העוצמה של עולם הבינוי עם הדיוק של עולם ההייטק. בין אם מדובר בחדר שרתים לסטארטאפ או מערך מצלמות למרכז לוגיסטי - אנו מתייחסים לכל כבל ולכל מצלמה בתשומת לב אובססיבית.",
+    },
+    faq: {
+      title: "שאלות נפוצות",
+      subtitle: "תשובות לשאלות שעולות בדרך כלל.",
+      items: [
+        { question: "האם אתם עובדים עם בתים פרטיים?", answer: "כן! אנו מתקינים בתים חכמים, מצלמות ורשתות בווילות יוקרה, לצד פרויקטים למשרדים ומפעלים." },
+        { question: "עם אילו מותגי מצלמות אתם עובדים?", answer: "אנו עובדים עם המותגים המובילים כמו Hikvision, Dahua, Uniview ו-Axis, כדי להבטיח אמינות ואחריות." },
+        { question: "האם יש אחריות על העבודה?", answer: "בוודאי. כל ההתקנות שלנו מגיעות עם אחריות על העבודה, בנוסף לאחריות היצרן על הציוד." },
+        { question: "האם אתם יכולים לסדר ארון שרתים מבולגן?", answer: "בהחלט. סידור ארונות זו אחת ההתמחויות שלנו. נהפוך את הספגטי של הכבלים לסדר מופתי שישפר את זרימת האוויר." }
+      ]
     },
     contact: {
-      title: "צור קשר",
-      subtitle: "מוכנים לשדרג את התשתית? בואו נדבר.",
+      title: "בואו נתחיל",
+      subtitle: "מוכנים לשדרג את האבטחה או להאיץ את הרשת?",
+      formTitle: "קבל הצעת מחיר",
       namePlaceholder: "שם מלא",
-      emailPlaceholder: "אימייל",
+      emailPlaceholder: "כתובת אימייל",
       phonePlaceholder: "מספר טלפון",
-      messagePlaceholder: "כיצד נוכל לעזור?",
-      submitButton: "שלח הודעה",
-      successMessage: "תודה! ניצור קשר בהקדם.",
-      address: "קרליבך 10, תל אביב (בתיאום מראש בלבד)",
+      messagePlaceholder: "ספר לנו על הפרויקט...",
+      submitButton: "שלח פנייה",
+      address: "קרליבך 10, תל אביב (בתיאום מראש)",
     },
     footer: {
       rights: "כל הזכויות שמורות.",
-      location: "ישראל",
+      description: "פתרונות תשתית מתקדמים לעולם המודרני.",
     },
   },
 };
