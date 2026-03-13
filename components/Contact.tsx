@@ -8,7 +8,7 @@ const Contact: React.FC = () => {
   const phoneNumber = "052-608-5951";
   const fullPhoneNumber = "+972 52-608-5951";
   const whatsappNumber = "972526085951";
-  const email = "ON.Tech.Israel@icloud.com";
+  const email = "ontech@bunker-255.com";
 
   return (
     <section id="contact" className="relative py-32 bg-slate-900 text-white overflow-hidden">

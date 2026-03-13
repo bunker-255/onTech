@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
-import { Activity } from 'lucide-react';
+import { Activity, ExternalLink } from 'lucide-react';
 
 const Footer: React.FC = () => {
   const { content } = useLanguage();
@@ -19,10 +19,20 @@ const Footer: React.FC = () => {
         
         <div className="text-sm font-medium text-center md:text-right">
           <p>&copy; {new Date().getFullYear()} onTech Israel. {content.footer.rights}</p>
-          <div className="flex justify-center md:justify-end mt-2 space-x-4 rtl:space-x-reverse opacity-50">
-             {/* Static text for now to avoid broken link confusion */}
-             <span>Privacy Policy</span>
-             <span>Terms of Service</span>
+          <div className="flex flex-wrap justify-center md:justify-end items-center mt-4 gap-4">
+             <span className="opacity-50 hover:opacity-100 transition-opacity cursor-pointer">Privacy Policy</span>
+             <span className="opacity-50 hover:opacity-100 transition-opacity cursor-pointer">Terms of Service</span>
+             
+             {/* BUNKER-255 Footer Button */}
+             <a
+              href="https://bunker-255.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 px-3 py-1 text-[10px] font-black uppercase tracking-wider text-slate-400 bg-slate-900 hover:bg-slate-800 hover:text-white border border-slate-800 hover:border-slate-700 rounded-full transition-all duration-300 md:ml-2 rtl:md:ml-0 rtl:md:mr-2"
+            >
+              <span>BUNKER-255</span>
+              <ExternalLink size={10} />
+            </a>
           </div>
         </div>
       </div>

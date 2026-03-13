@@ -22,6 +22,7 @@ export interface Content {
     services: string;
     process: string;
     about: string;
+    gallery: string;
     contact: string;
   };
   hero: {
@@ -30,6 +31,7 @@ export interface Content {
     subtitle: string;
     cta: string;
     secondaryCta: string;
+    badge: string;
   };
   services: {
     sectionTitle: string;
@@ -60,6 +62,12 @@ export interface Content {
     title: string;
     subtitle: string;
     items: FAQItem[];
+  };
+  gallery: {
+    title: string;
+    subtitle: string;
+    viewAll: string;
+    close: string;
   };
   contact: {
     title: string;

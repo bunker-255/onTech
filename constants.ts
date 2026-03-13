@@ -7,6 +7,7 @@ export const TRANSLATIONS: Record<Language, Content> = {
       services: "Solutions",
       process: "Process",
       about: "Company",
+      gallery: "Gallery",
       contact: "Contact",
     },
     hero: {
@@ -15,6 +16,7 @@ export const TRANSLATIONS: Record<Language, Content> = {
       subtitle: "Israel's premier specialists in low-voltage systems. From advanced CCTV and alarm integration to enterprise-grade fiber optics and server rooms.",
       cta: "Get a Free Consultation",
       secondaryCta: "View Services",
+      badge: "Licensed Installers",
     },
     services: {
       sectionTitle: "Our Expertise",
@@ -80,6 +82,12 @@ export const TRANSLATIONS: Record<Language, Content> = {
         { question: "Can you fix an existing messy server rack?", answer: "Absolutely. Rack reorganization is one of our specialties. We can trace, label, and tidy up 'spaghetti' cables to improve airflow and manageability." }
       ]
     },
+    gallery: {
+      title: "Our Work",
+      subtitle: "A glimpse into our recent projects and installations.",
+      viewAll: "View Gallery",
+      close: "Close",
+    },
     contact: {
       title: "Start Your Project",
       subtitle: "Ready to upgrade your security or speed up your network?",
@@ -102,6 +110,7 @@ export const TRANSLATIONS: Record<Language, Content> = {
       services: "Решения",
       process: "Процесс",
       about: "О нас",
+      gallery: "Галерея",
       contact: "Контакты",
     },
     hero: {
@@ -110,6 +119,7 @@ export const TRANSLATIONS: Record<Language, Content> = {
       subtitle: "Ведущие специалисты Израиля по слаботочным системам. От установки камер и сигнализаций до оптоволокна и серверных комнат.",
       cta: "Бесплатная консультация",
       secondaryCta: "Наши услуги",
+      badge: "Лицензированные специалисты",
     },
     services: {
       sectionTitle: "Наши Услуги",
@@ -175,6 +185,12 @@ export const TRANSLATIONS: Record<Language, Content> = {
         { question: "Можете ли вы навести порядок в старом серверном шкафу?", answer: "Конечно. Реорганизация стоек — наша специализация. Мы распутаем «спагетти» из проводов, промаркируем и аккуратно уложим всё." }
       ]
     },
+    gallery: {
+      title: "Наши работы",
+      subtitle: "Взгляните на наши недавние проекты и установки.",
+      viewAll: "Открыть галерею",
+      close: "Закрыть",
+    },
     contact: {
       title: "Начните проект",
       subtitle: "Готовы обновить безопасность или ускорить сеть?",
@@ -197,6 +213,7 @@ export const TRANSLATIONS: Record<Language, Content> = {
       services: "פתרונות",
       process: "תהליך עבודה",
       about: "אודות",
+      gallery: "גלריה",
       contact: "צור קשר",
     },
     hero: {
@@ -205,6 +222,7 @@ export const TRANSLATIONS: Record<Language, Content> = {
       subtitle: "המומחים של ישראל למערכות מתח נמוך. מהתקנת מצלמות ואזעקות חכמות ועד לתשתיות סיבים וחדרי שרתים.",
       cta: "קבל ייעוץ חינם",
       secondaryCta: "לשירותים שלנו",
+      badge: "מתקינים מורשים",
     },
     services: {
       sectionTitle: "המומחיות שלנו",
@@ -269,6 +287,12 @@ export const TRANSLATIONS: Record<Language, Content> = {
         { question: "האם יש אחריות על העבודה?", answer: "בוודאי. כל ההתקנות שלנו מגיעות עם אחריות על העבודה, בנוסף לאחריות היצרן על הציוד." },
         { question: "האם אתם יכולים לסדר ארון שרתים מבולגן?", answer: "בהחלט. סידור ארונות זו אחת ההתמחויות שלנו. נהפוך את הספגטי של הכבלים לסדר מופתי שישפר את זרימת האוויר." }
       ]
+    },
+    gallery: {
+      title: "העבודות שלנו",
+      subtitle: "הצצה לפרויקטים וההתקנות האחרונים שלנו.",
+      viewAll: "צפה בגלריה",
+      close: "סגור",
     },
     contact: {
       title: "בואו נתחיל",
